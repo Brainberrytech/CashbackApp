@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/buttonExpandPersonalDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="personal details"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/iconDropDownArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/iconDropUpArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_arrow_drop_up_black_24dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewFullName"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="200dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/textViewEmailAddress"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="200dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/textViewContactNumber"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ContactNumber"
+        android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/editTextContactNumber"
+        android:layout_width="200dp"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/buttonSaveChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save changes"/>
+
+</LinearLayout>

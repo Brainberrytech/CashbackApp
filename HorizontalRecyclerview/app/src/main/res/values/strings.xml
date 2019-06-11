@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HorizontalRecyclerview</string>
+    <string name="general">General</string>
+    <string name="personal_details">Personal Details</string>
+    <string-array name="fontSize_array">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email</string>
+    <string name="choose_password">Choose Password</string>
+    <string name="mobile_number">Contact</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="prompt_password">password</string>
+    <string name="prompt_email">email</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="invalid_username">Not a valid username</string>
+</resources>

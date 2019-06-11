@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WELCOME">
+    <ImageView
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/splashbackground"
+        />
+    <LinearLayout
+        android:layout_below="@+id/slider"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/login">
+        <TextView
+            android:id="@+id/login"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="LogIn"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold"
+            android:rotation="-5"
+            />
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="SignUp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="32dp"
+            android:textStyle="bold"
+            android:rotation="5"
+            />
+
+        <TextView
+            android:id="@+id/SkipToBrowse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:rotation="-5"
+            android:text="Skip to Browse"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
