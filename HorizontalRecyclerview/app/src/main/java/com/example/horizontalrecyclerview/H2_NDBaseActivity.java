@@ -119,7 +119,7 @@ public class H2_NDBaseActivity extends AppCompatActivity {
     }
 
     public void About(View view) {
-        Intent about=new Intent(this,About.class);
+        Intent about=new Intent(this,Aboutus.class);
         startActivity(about);
     }
 
@@ -132,6 +132,11 @@ public class H2_NDBaseActivity extends AppCompatActivity {
     public void Settings(View view) {
         Intent setting=new Intent(this,Setting.class);
         startActivity(setting);
+    }
+
+    public void rateUs(View view) {
+        Intent rate=new Intent(this,RateUsActivity.class);
+        startActivity(rate);
     }
 }
 

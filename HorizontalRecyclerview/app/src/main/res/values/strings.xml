@@ -23,4 +23,10 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="invalid_username">Not a valid username</string>
+    <string name="rate_us_tagline">We hope you enjoyed our app today</string>
+    <string name="Aboutus_title">FlyingPaisa - India\'s Most Paying Cashback App</string>
+    <string name="aboutus_content">Cashback the name itself is so cheerful and so it delights all users. We here at FlyingPaisa provides you all shopper\'s digital coupons and exciting cashbacks. We connect you to your favourite brand and stores to shop with benifit and earning extra cashback and hence joy. Sellers provide you with the most reasonable prices here. Our huge network includes food, fashion, clothing, accessories, electronics and a never ending list. Come get a great user experience and huge discount on your loved products at the most reasonable prices. Available offers are displayed to you so don\'t wait, first grab them before the offer expires.</string>
+    <string name="aboutus_content1">You will get your cashback within 12 working business days.</string>
+    <string name="aboutus_content2">For any help and support contact us</string>
+    <string name="aboutus_contact">9002305432</string>
 </resources>

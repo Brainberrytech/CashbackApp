@@ -13,6 +13,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+/**
+ * Author Shayak Banerjee
+ *
+ */
 public class ChangePasswordFragment extends Fragment {
 
     private ImageView iconDropDownArrow, iconDropUpArrow;
@@ -27,32 +31,36 @@ public class ChangePasswordFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.personal_details_fragment, container, false);
+        return inflater.inflate(R.layout.change_password_fragment, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        textViewCurrentPassword = getView().findViewById(R.id.textViewPassword);
+        textViewCurrentPassword = getView().findViewById(R.id.textViewCurrentPassword);
         textViewNewPassword = getView().findViewById(R.id.textViewNewPassword);
-        textViewConfirmPassword =getView().findViewById(R.id.textViewConfirmPassword);
+        textViewConfirmPassword = getView().findViewById(R.id.textViewConfirmPassword);
         editTextCurrentPassword = getView().findViewById(R.id.editTextCurrentPassword);
         editTextNewPassword = getView().findViewById(R.id.editTextNewPassword);
         editTextConfirmPassword = getView().findViewById(R.id.editTextConfirmPassword);
         buttonExpandChangePassword = getView().findViewById(R.id.buttonExpandChangePassword);
+        buttonSaveChanges = getView().findViewById(R.id.buttonSaveChanges);
 
         iconDropDownArrow = getView().findViewById(R.id.iconDropDownArrow);
         iconDropUpArrow = getView().findViewById(R.id.iconDropUpArrow);
+
+        setAllComponentsAsVisible(false);
 
         buttonExpandChangePassword = getView().findViewById(R.id.buttonExpandChangePassword);
         buttonExpandChangePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View l) {
-                if(areComponentsVisible)
+                if (areComponentsVisible) {
                     setAllComponentsAsVisible(false);
-                else
+                } else
                     setAllComponentsAsVisible(true);
+
                 areComponentsVisible = !areComponentsVisible;
             }
         });
@@ -60,15 +68,16 @@ public class ChangePasswordFragment extends Fragment {
 
     }
 
-    private void setAllComponentsAsVisible(boolean decision){
-        if(decision){
+    private void setAllComponentsAsVisible(boolean decision) {
+        if (decision) {
             textViewCurrentPassword.setVisibility(View.VISIBLE);
             textViewNewPassword.setVisibility(View.VISIBLE);
             textViewConfirmPassword.setVisibility(View.VISIBLE);
             editTextCurrentPassword.setVisibility(View.VISIBLE);
             editTextNewPassword.setVisibility(View.VISIBLE);
             editTextConfirmPassword.setVisibility(View.VISIBLE);
-            buttonExpandChangePassword.setVisibility(View.VISIBLE);
+            buttonSaveChanges.setVisibility(View.VISIBLE);
+
             iconDropDownArrow.setVisibility(View.GONE);
             iconDropUpArrow.setVisibility(View.VISIBLE);
         } else {
@@ -78,9 +87,11 @@ public class ChangePasswordFragment extends Fragment {
             editTextCurrentPassword.setVisibility(View.GONE);
             editTextNewPassword.setVisibility(View.GONE);
             editTextConfirmPassword.setVisibility(View.GONE);
-            buttonExpandChangePassword.setVisibility(View.GONE);
+            buttonSaveChanges.setVisibility(View.GONE);
+
             iconDropDownArrow.setVisibility(View.VISIBLE);
             iconDropUpArrow.setVisibility(View.GONE);
         }
     }
 }
+

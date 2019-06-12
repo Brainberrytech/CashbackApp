@@ -26,11 +26,10 @@
         android:layout_height="wrap_content"
         class="com.example.horizontalrecyclerview.PersonalDetailsFragment"/>
 
-    <!--<fragment-->
-        <!--android:id="@+id/changePasswordFragment"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--class="com.example.horizontalrecyclerview.ChangePasswordFragment"/>-->
-
+    <fragment
+       android:id="@+id/changePasswordFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.example.horizontalrecyclerview.ChangePasswordFragment" />
 
 </LinearLayout>
