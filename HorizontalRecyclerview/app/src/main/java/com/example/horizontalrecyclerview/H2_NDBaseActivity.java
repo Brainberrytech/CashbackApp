@@ -138,5 +138,35 @@ public class H2_NDBaseActivity extends AppCompatActivity {
         Intent rate=new Intent(this,RateUsActivity.class);
         startActivity(rate);
     }
+
+    public void store(View view) {
+        Intent store=new Intent(this,CardViewActivity.class);
+        startActivity(store);
+    }
+
+    public void Home(View view) {
+        Intent home=new Intent(this,MainActivity.class);
+        startActivity(home);
+    }
+
+    public void help(View view) {
+        Intent help=new Intent(this,FAQActivity.class);
+        startActivity(help);
+    }
+
+    public void Favourites(View view) {
+        Intent favourites=new Intent(this,FavoritesActivity.class);
+        startActivity(favourites);
+    }
+
+    public void Vouchers(View view) {
+        Intent vouchers=new Intent(this,CashbackOffersActivity.class);
+        startActivity(vouchers);
+    }
+
+    public void Categories(View view) {
+        Intent categories= new Intent(this,Categories.class);
+        startActivity(categories);
+    }
 }
 

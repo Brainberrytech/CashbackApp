@@ -3,6 +3,7 @@ package com.example.horizontalrecyclerview;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,8 +16,8 @@ import android.widget.TextView;
 
 public class PersonalDetailsFragment extends Fragment {
 
-    private ImageView iconDropDownArrow, iconDropUpArrow;
-    private LinearLayout buttonExpandPersonalDetails;
+ /*   private ImageView iconDropDownArrow, iconDropUpArrow;
+    private ConstraintLayout buttonExpandPersonalDetails;
 
     private TextView textViewFullName, textViewEmailAddress, textViewContactNumber;
     private EditText editTextFullName, editTextEmailAddress, editTextContactNumber;
@@ -86,5 +87,5 @@ public class PersonalDetailsFragment extends Fragment {
             iconDropDownArrow.setVisibility(View.VISIBLE);
             iconDropUpArrow.setVisibility(View.GONE);
         }
-    }
+    }*/
 }

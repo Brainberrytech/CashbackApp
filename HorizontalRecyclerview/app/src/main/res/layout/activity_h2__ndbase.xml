@@ -98,12 +98,13 @@
                         android:layout_height="wrap_content"
                         android:textColor="#00154F"
                         android:layout_gravity="center"
-                        android:text="Your Wallet" />
+                        android:text="My Account" />
 
                 </LinearLayout>
 
 
                 <LinearLayout
+                    android:onClick="Home"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -124,6 +125,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:onClick="store"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -144,6 +146,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:onClick="Categories"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -164,6 +167,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:onClick="Favourites"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -205,6 +209,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:onClick="Vouchers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -267,6 +272,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:onClick="help"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">

@@ -1,55 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WELCOME">
-    <ImageView
-        android:id="@+id/slider"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:src="@drawable/splashbackground"
-        />
-    <LinearLayout
-        android:layout_below="@+id/slider"
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#f4af1b"
+        android:text="SignIn"
+        android:textColor="#00154f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <Button
+        android:id="@+id/skip_to_browse"
+        android:textColor="#00154f"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Skip to browse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858" />
+
+    <fragment
+
+        android:id="@+id/carouselViewLoginPage"
+        android:name="com.example.horizontalrecyclerview.LoginPageCarouselFragment"
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:background="@drawable/login">
-        <TextView
-            android:id="@+id/login"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="LogIn"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:layout_marginTop="35dp"
-            android:textStyle="bold"
-            android:rotation="-5"
-            />
-        <TextView
-            android:id="@+id/signUp"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="SignUp"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:layout_marginTop="32dp"
-            android:textStyle="bold"
-            android:rotation="5"
-            />
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-34dp"
+        tools:layout_editor_absoluteY="150dp" />
 
-        <TextView
-            android:id="@+id/SkipToBrowse"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
-            android:rotation="-5"
-            android:text="Skip to Browse"
-            android:textSize="30dp"
-            android:textStyle="bold" />
-    </LinearLayout>
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
