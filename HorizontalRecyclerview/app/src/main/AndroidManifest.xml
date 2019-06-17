@@ -11,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".CompanyCouponActivity"/>
+
         <activity android:name=".ProfileActivity"></activity>
         <activity android:name=".Offer_and_Coupons" />
         <activity android:name=".Categories" />
