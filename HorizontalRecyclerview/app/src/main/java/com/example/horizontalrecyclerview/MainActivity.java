@@ -44,34 +44,23 @@ public class MainActivity extends H2_NDBaseActivity{
     private void getImages(){
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
 
-        mImageUrls.add("https://c1.staticflickr.com/5/4636/25316407448_de5fbf183d_o.jpg");
+        mImageUrls.add("https://img.etimg.com/thumb/msid-66421537,width-1200,height-900,resizemode-4,imgsize-165547/untitled-7.jpg");
         //   mNames.add("Havasu Falls");
 
-        mImageUrls.add("https://i.redd.it/tpsnoz5bzo501.jpg");
+        mImageUrls.add("https://hippoprod.s3.amazonaws.com/merchants/logos/000/000/037/large/cleartrip_india_logo.png");
         // mNames.add("Trondheim");
 
-        mImageUrls.add("https://i.redd.it/qn7f9oqu7o501.jpg");
+        mImageUrls.add("https://www.searchpng.com/wp-content/uploads/2019/03/Swiggy-PNG-Logo-715x715.png");
         //mNames.add("Portugal");
 
-        mImageUrls.add("https://i.redd.it/j6myfqglup501.jpg");
+        mImageUrls.add("https://upload.wikimedia.org/wikipedia/en/0/09/Zomato_company_logo.png");
         // mNames.add("Rocky Mountain National Park");
 
 
-        mImageUrls.add("https://i.redd.it/0h2gm1ix6p501.jpg");
+        mImageUrls.add("https://pngimg.com/uploads/amazon/amazon_PNG13.png");
         //mNames.add("Mahahual");
 
-        mImageUrls.add("https://i.redd.it/k98uzl68eh501.jpg");
-        //mNames.add("Frozen Lake");
 
-
-        mImageUrls.add("https://i.redd.it/glin0nwndo501.jpg");
-        //mNames.add("White Sands Desert");
-
-        mImageUrls.add("https://i.redd.it/obx4zydshg601.jpg");
-        //mNames.add("Austrailia");
-
-        mImageUrls.add("https://i.imgur.com/ZcLLrkY.jpg");
-        //mNames.add("Washington");
 
         initRecyclerView();
 

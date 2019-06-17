@@ -1,10 +1,12 @@
 package com.example.horizontalrecyclerview;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.PersistableBundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.ActionMenuView;
@@ -124,9 +126,26 @@ public class H2_NDBaseActivity extends AppCompatActivity {
     }
 
     public void Sign_out(View view) {
-        Intent sign_out=new Intent(this,WELCOME.class);
-        startActivity(sign_out);
+        //Intent sign_out=new Intent(this,WELCOME.class);
+        //startActivity(sign_out);
+        AlertDialog.Builder builder=new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure you want to sign out")
+                .setCancelable(false)
+        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent sign_out=new Intent(H2_NDBaseActivity.this,WELCOME.class);
+                startActivity(sign_out);
+            }
+        }).setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
 
+        AlertDialog alertDialog=builder.create();
+        alertDialog.show();
     }
 
     public void Settings(View view) {
@@ -167,6 +186,11 @@ public class H2_NDBaseActivity extends AppCompatActivity {
     public void Categories(View view) {
         Intent categories= new Intent(this,Categories.class);
         startActivity(categories);
+    }
+
+    public void Profile(View view) {
+        Intent profile = new Intent(this,ProfileActivity.class);
+        startActivity(profile);
     }
 }
 

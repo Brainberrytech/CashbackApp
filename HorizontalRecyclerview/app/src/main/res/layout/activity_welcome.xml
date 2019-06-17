@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00154F"
     tools:context=".WELCOME">
+
 
     <Button
         android:id="@+id/signin"
@@ -15,17 +17,18 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="#f4af1b"
-        android:text="SignIn"
+        android:text="Sign In"
         android:textColor="#00154f"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564" />
+        app:layout_constraintVertical_bias="0.636" />
 
     <Button
         android:id="@+id/skip_to_browse"
-        android:textColor="#00154f"
+        android:textColor="#FFFFFF"
         android:layout_width="112dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -40,14 +43,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.858" />
 
-    <fragment
 
-        android:id="@+id/carouselViewLoginPage"
-        android:name="com.example.horizontalrecyclerview.LoginPageCarouselFragment"
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-34dp"
-        tools:layout_editor_absoluteY="150dp" />
+        app:fillColor="#F4AF1B"
+        app:pageColor="#00154F"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="44dp" />
 
 
 </android.support.constraint.ConstraintLayout>

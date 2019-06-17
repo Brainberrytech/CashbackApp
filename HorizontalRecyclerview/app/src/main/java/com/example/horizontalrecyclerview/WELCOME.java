@@ -6,30 +6,50 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-public class WELCOME extends FragmentActivity {
-    Button sign_in,skip_to_browse;
+import com.synnapps.carouselview.CarouselView;
+import com.synnapps.carouselview.ImageListener;
+
+public class WELCOME extends AppCompatActivity {
+    CarouselView carouselView;
+
+    int[] sampleImages = {R.drawable.welcome1, R.drawable.welcome2, R.drawable.welcome5, R.drawable.welcome4};
+    Button sign_in, skip_to_browse;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+        carouselView = (CarouselView) findViewById(R.id.carouselView);
+        carouselView.setPageCount(sampleImages.length);
 
-        sign_in=findViewById(R.id.signin);
-        skip_to_browse=findViewById(R.id.skip_to_browse);
+        carouselView.setImageListener(imageListener);
+
+
+        sign_in = findViewById(R.id.signin);
+        skip_to_browse = findViewById(R.id.skip_to_browse);
         sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent sign_in=new Intent(WELCOME.this,LoginActivity.class);
+                Intent sign_in = new Intent(WELCOME.this, LoginActivity.class);
                 startActivity(sign_in);
             }
         });
         skip_to_browse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent skip_to_browse=new Intent(WELCOME.this,MainActivity.class);
+                Intent skip_to_browse = new Intent(WELCOME.this, MainActivity.class);
                 startActivity(skip_to_browse);
             }
         });
     }
+
+    ImageListener imageListener = new ImageListener() {
+        @Override
+        public void setImageForPosition(int position, ImageView imageView) {
+            imageView.setImageResource(sampleImages[position]);
+        }
+    };
 }

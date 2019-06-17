@@ -44,6 +44,7 @@
         android:paddingBottom="40dp"/>
 
     <Button
+        android:onClick="onClickButton"
         android:id="@+id/buttonTopicNotFound"
         android:layout_width="match_parent"
         android:layout_height="45dp"
