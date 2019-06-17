@@ -46,16 +46,18 @@
 
     <com.synnapps.carouselview.CarouselView
         android:id="@+id/carouselView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="374dp"
+        android:layout_height="406dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:fillColor="#F4AF1B"
+        app:layout_constraintBottom_toTopOf="@+id/signin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:pageColor="#00154F"
-        app:radius="6dp"
-        app:slideInterval="3000"
-        app:strokeColor="#FF777777"
-        app:strokeWidth="1dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="44dp" />
-
+        app:radius="6dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -26,12 +26,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private static final String TAG = "RecyclerViewAdapter";
 
     //vars
-   // private ArrayList<String> mNames;
+    private ArrayList<String> mNames;
     private ArrayList<String> mImageUrls;
     private Context mContext;
 
-    RecyclerViewAdapter(Context context, ArrayList<String> imageUrls) {
-     //   mNames = names;
+    RecyclerViewAdapter(Context context, ArrayList<String> imageUrls,ArrayList<String> names) {
+        mNames = names;
         mImageUrls = imageUrls;
         mContext = context;
     }
@@ -52,7 +52,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 //                .into(holder.image);
 
         Picasso.get().load(mImageUrls.get(position)).into(holder.image);
-
+        holder.textView.setText(mNames.get(position));
 
         holder.image.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,12 +71,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView image;
-
+        TextView textView;
 
         public ViewHolder(View itemView) {
             super(itemView);
             image = itemView.findViewById(R.id.image_view);
-
+            textView = itemView.findViewById(R.id.textview_recycler);
         }
     }
 }

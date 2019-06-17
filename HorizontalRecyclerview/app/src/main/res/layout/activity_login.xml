@@ -67,6 +67,7 @@
             android:layout_margin="10sp"
             />
         <Button
+            android:onClick="Sign_Up"
             android:id="@+id/login_btn_signup"
             android:layout_height="wrap_content"
             android:layout_width="0dp"

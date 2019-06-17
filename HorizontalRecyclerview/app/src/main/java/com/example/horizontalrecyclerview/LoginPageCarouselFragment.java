@@ -33,7 +33,7 @@ public class LoginPageCarouselFragment extends AppCompatActivity {
 
     CarouselView carouselView;
 
-    int[] sampleImages = {R.drawable.welcome1, R.drawable.welcome2, R.drawable.welcome3, R.drawable.welcome4};
+    int[] sampleImages = {R.drawable.welcome1, R.drawable.welcome2, R.drawable.welcome5, R.drawable.welcome4};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
