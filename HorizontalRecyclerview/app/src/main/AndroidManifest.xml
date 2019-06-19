@@ -3,6 +3,7 @@
     package="com.example.horizontalrecyclerview">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -12,8 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".CompanyCouponActivity"/>
-
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".PaymentGateWay"/>
+        <activity android:name=".ProfileActivity"/>
         <activity android:name=".Offer_and_Coupons" />
         <activity android:name=".Categories" />
         <activity android:name=".Aboutus" />
