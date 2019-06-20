@@ -42,6 +42,10 @@ public class MainActivity extends H2_NDBaseActivity{
             imageView.setImageResource(sampleImages[position]);
         }
     };
+
+    /**
+     * getImages method is called to fill the ArrayLists with data so they can be passed to the adapter for recyclerview
+     */
     private void getImages(){
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
 
@@ -67,6 +71,11 @@ public class MainActivity extends H2_NDBaseActivity{
 
     }
 
+    /**
+     * initRecyclerView is called to call the adapter with data inserted by getImages methods in the arrarlists
+     *
+     */
+
     private void initRecyclerView(){
         Log.d(TAG, "initRecyclerView: init recyclerview");
 
@@ -76,6 +85,11 @@ public class MainActivity extends H2_NDBaseActivity{
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, mImageUrls,mNames);
         recyclerView.setAdapter(adapter);
     }
+
+    /**
+     * calls the refer_and_earn activity on the click on imageview of Refer and earn
+     * @param view
+     */
 
     public void Refers(View view) {
         Intent refer=new Intent(this,Refer_and_earn.class);

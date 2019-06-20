@@ -43,6 +43,4 @@ public class CarRecyclerViewItemHolder extends RecyclerView.ViewHolder {
         }
 
 
-    };
-
-
+}

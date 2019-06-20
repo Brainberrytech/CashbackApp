@@ -47,4 +47,6 @@ dependencies {
     //
     implementation 'android.arch.lifecycle:extensions:1.1.1'
     implementation 'com.shaishavgandhi:login-buttons:0.1.1'
+    implementation 'com.chaos.view:pinview:1.3.2'
+
 }

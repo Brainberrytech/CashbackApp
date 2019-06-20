@@ -2,12 +2,7 @@
     <string name="app_name">HorizontalRecyclerview</string>
     <string name="general">General</string>
     <string name="personal_details">Personal Details</string>
-    <string-array name="fontSize_array">
-        <item>Small</item>
-        <item>Medium</item>
-        <item>Large</item>
 
-    </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -45,4 +40,9 @@
     <string name="there_are">THERE ARE</string>
     <string name="latest_offers">Latest Offers</string>
     <string name="rewards"> REWARDS</string>
+    <string name="enter_the_code_sent_to">Enter the code sent to</string>
+    <string name="_1234567890">1234567890</string>
+    <string name="verify">VERIFY</string>
+    <string name="didn_t_received_the_verification_otp">Didn\'t received the verification OTP ?</string>
+    <string name="resend_otp">RESEND OTP</string>
 </resources>
