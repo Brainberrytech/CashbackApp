@@ -24,11 +24,10 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.636" />
+        app:layout_constraintVertical_bias="0.6" />
 
     <Button
         android:id="@+id/skip_to_browse"
-        android:textColor="#FFFFFF"
         android:layout_width="112dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -37,11 +36,25 @@
         android:layout_marginBottom="8dp"
         android:background="?android:attr/selectableItemBackground"
         android:text="Skip to browse"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.858" />
+        app:layout_constraintVertical_bias="0.825" />
+
+    <Button
+        android:onClick="How_it_works"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="How it Works"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skip_to_browse" />
 
 
     <com.synnapps.carouselview.CarouselView
@@ -55,8 +68,10 @@
         app:fillColor="#F4AF1B"
         app:layout_constraintBottom_toTopOf="@+id/signin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369"
         app:pageColor="#00154F"
         app:radius="6dp" />
 

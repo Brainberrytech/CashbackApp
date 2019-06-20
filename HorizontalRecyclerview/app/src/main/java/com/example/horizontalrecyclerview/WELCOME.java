@@ -75,4 +75,9 @@ public class WELCOME extends AppCompatActivity {
             imageView.setImageResource(sampleImages[position]);
         }
     };
+
+    public void How_it_works(View view) {
+        Intent how_it_works= new Intent(this,How_it_works.class);
+        startActivity(how_it_works);
+    }
 }

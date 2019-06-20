@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        app:titleTextColor="#F4AF1B"
+        app:title="How it Works?"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:background="#00154F"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="14sp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#00154F"
+
+        android:layout_height="wrap_content"
+        android:text="How FlyingPaisa works?"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="21sp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#00154F"
+
+        android:text="1. Logon to FlyingPaisa and register your account for free."
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#00154F"
+
+        android:text="2. Browse different products and offers."
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#00154F"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22sp"
+        android:text="3. Select the product and offer which satisfies you the most."
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#00154F"
+
+        android:layout_marginTop="24sp"
+        android:text="4. Click on 'Getcashback' before confirming your order."
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#00154F"
+        android:layout_marginTop="26sp"
+        android:text="5. Track your orders and enjoy cashbacks."
+        />
+
+
+
+
+
+
+</LinearLayout>
