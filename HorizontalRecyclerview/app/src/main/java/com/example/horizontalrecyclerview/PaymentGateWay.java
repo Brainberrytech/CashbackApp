@@ -14,6 +14,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+/**
+ * @AUTHOR MOHNISH
+ *
+ * here we perform a task of transaction money by using UPI
+ *
+ */
 
 public class PaymentGateWay extends AppCompatActivity {
     EditText amountEt, noteEt, nameEt,upiIdEt;
@@ -30,7 +36,9 @@ public class PaymentGateWay extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 //Getting the values from the EditTexts
+
                 String amount = amountEt.getText().toString();
                 String note = noteEt.getText().toString();
                 String name = nameEt.getText().toString();
@@ -51,8 +59,17 @@ public class PaymentGateWay extends AppCompatActivity {
 
     }
 
+    /**
+     *This function is reponsible to add UPI in app
+     * @param amount value of money
+     * @param upiId  id of user ,upi id is not editable
+     * @param name   name of account owner
+     * @param note  message
+     */
     void payUsingUpi(String amount, String upiId, String name, String note) {
-
+        /*   We are building a URI path which will allow us to make the transaction.
+             This is achieved using the buildUpon() method on the ‘uri’ object and adding query parameters to it
+         */
         Uri uri = Uri.parse("upi://pay").buildUpon()
                 .appendQueryParameter("pa", upiId)
                 .appendQueryParameter("pn", name)
@@ -76,14 +93,18 @@ public class PaymentGateWay extends AppCompatActivity {
         }
 
     }
-
+    /*
+    function is used to integrate UPI payment to our app
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         switch (requestCode) {
             case UPI_PAYMENT:
+                //when user put data on upi payment
                 if ((RESULT_OK == resultCode) || (resultCode == 11)) {
+                    //we return back to our own app and check whether the transaction is successful
                     if (data != null) {
                         String trxt = data.getStringExtra("response");
                         Log.d("UPI", "onActivityResult: " + trxt);
@@ -91,13 +112,16 @@ public class PaymentGateWay extends AppCompatActivity {
                         dataList.add(trxt);
                         upiPaymentDataOperation(dataList);
                     } else {
+                        // return back to our app when transaction is not successful
+
                         Log.d("UPI", "onActivityResult: " + "Return data is null");
                         ArrayList<String> dataList = new ArrayList<>();
                         dataList.add("nothing");
                         upiPaymentDataOperation(dataList);
                     }
                 } else {
-                    Log.d("UPI", "onActivityResult: " + "Return data is null"); //when user simply back without payment
+                    Log.d("UPI", "onActivityResult: " + "Return data is null");
+                    //when user simply back without payment
                     ArrayList<String> dataList = new ArrayList<>();
                     dataList.add("nothing");
                     upiPaymentDataOperation(dataList);
@@ -106,6 +130,11 @@ public class PaymentGateWay extends AppCompatActivity {
         }
     }
 
+    /**
+     *
+     * @param data get from the user
+     *             perform the transaction operation after checking all constraint
+     */
     private void upiPaymentDataOperation(ArrayList<String> data) {
         if (isConnectionAvailable( PaymentGateWay.this)) {
             String str = data.get(0);
@@ -146,6 +175,12 @@ public class PaymentGateWay extends AppCompatActivity {
         }
     }
 
+    /**
+     *
+     * @param context check if the device has any active internet connection
+     *
+     * @return true device with internet connection ,otherwise false
+     */
     public static boolean isConnectionAvailable(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         if (connectivityManager != null) {
@@ -159,4 +194,5 @@ public class PaymentGateWay extends AppCompatActivity {
         return false;
     }
 }
+
 

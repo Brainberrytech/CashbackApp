@@ -49,7 +49,7 @@
                 android:layout_margin="14dp"
 
                 >
-
+                <!--it is used for user to checkout clothing section-->
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -90,7 +90,7 @@
                 android:layout_margin="14dp"
 
                 >
-
+                <!--it is used for user to checkout beauty section-->
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -131,7 +131,7 @@
                 android:layout_margin="14dp"
 
                 >
-
+                <!--it is used for user to checkout footwear section-->
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -172,7 +172,7 @@
                 android:layout_margin="14dp"
 
                 >
-
+                <!--it is used for user to checkout electronics section-->
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -213,7 +213,7 @@
                 android:layout_margin="14dp"
 
                 >
-
+                <!--it is used for user to checkout books section-->
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -254,7 +254,7 @@
                 android:layout_margin="14dp"
 
                 >
-
+                <!--it is used for user to checkout food section-->
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"

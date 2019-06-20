@@ -8,7 +8,7 @@
     android:background="@drawable/gradient"
 
     >
-
+    <!-- show the image on splash screen "logo.png saved at drawable folder "-->
     <ImageView
         android:id="@+id/logo"
         android:layout_height="wrap_content"

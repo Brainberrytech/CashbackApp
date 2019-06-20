@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </android.support.v7.widget.Toolbar>
-
+    <!-- this is used to enable the user to enter Full Name-->
     <EditText
         android:id="@+id/FullName"
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
         android:autofillHints="NAME"
         android:layout_marginTop="50sp"
         android:padding="14sp"/>
-
+    <!-- this is used to enable the user to enter Email-->
     <EditText
         android:id="@+id/signup_email"
         android:layout_width="match_parent"
@@ -39,7 +39,7 @@
         android:padding="14sp"
         android:layout_marginTop="10sp"
         />
-
+    <!-- this is used to enable the user to enter Password-->
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             android:inputType="textPassword"
             android:hint="@string/prompt_password"/>
     </android.support.design.widget.TextInputLayout>
-
+    <!-- this is used to enable the user to enter Mobile Number-->
     <EditText
         android:id="@+id/mobile_number"
         android:layout_width="match_parent"
@@ -64,6 +64,7 @@
         android:padding="14sp"
         android:layout_marginTop="10sp"
         />
+    <!-- this button is use for SignUp-->
     <Button
         android:onClick="OTP"
         android:id="@+id/getOTP"
