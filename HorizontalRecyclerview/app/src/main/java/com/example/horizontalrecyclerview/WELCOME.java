@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
@@ -26,7 +27,7 @@ public class WELCOME extends AppCompatActivity {
     /**
      * sampleImages array contains the images for the carousel to display taking them from drawable directory.
      */
-    int[] sampleImages = {R.drawable.welcome1, R.drawable.welcome2, R.drawable.welcome5, R.drawable.welcome4};
+    String[] sampleImages = {"https://i.imgur.com/xwAvRvm.png", "https://i.imgur.com/gvMONvV.png", "https://i.imgur.com/Rft0c1m.png", "https://i.imgur.com/P7HARqy.png"};
     Button sign_in, skip_to_browse;
 
     @Override
@@ -72,7 +73,8 @@ public class WELCOME extends AppCompatActivity {
     ImageListener imageListener = new ImageListener() {
         @Override
         public void setImageForPosition(int position, ImageView imageView) {
-            imageView.setImageResource(sampleImages[position]);
+            Picasso.get().load(sampleImages[position]).into(imageView);
+            //imageView.setImageResource(sampleImages[position]);
         }
     };
 

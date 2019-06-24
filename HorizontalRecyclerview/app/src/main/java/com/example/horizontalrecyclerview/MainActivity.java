@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.squareup.picasso.Picasso;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
@@ -23,11 +24,25 @@ public class MainActivity extends H2_NDBaseActivity{
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
     private ArrayList<String> mImageUrls = new ArrayList<>();
+    ImageView refer,black,orange,redbus,sale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setBaseContentView(R.layout.activity_main);
+
+        refer=findViewById(R.id.referandearn);
+        Picasso.get().load("https://i.imgur.com/poa1AWa.jpg").into(refer);
+        black=findViewById(R.id.black);
+        Picasso.get().load("https://i.imgur.com/rVQWv37.jpg").into(black);
+        orange=findViewById(R.id.orange);
+        Picasso.get().load("https://i.imgur.com/r40yB2V.jpg").into(orange);
+        redbus=findViewById(R.id.redbus);
+        Picasso.get().load("https://i.imgur.com/Cphqsjr.jpg").into(redbus);
+        sale=findViewById(R.id.sale);
+        Picasso.get().load("https://i.imgur.com/i7S5Wf9.jpg").into(sale);
+
+
         carouselView = (CarouselView) findViewById(R.id.carouselView);
         carouselView.setPageCount(sampleImages.length);
 

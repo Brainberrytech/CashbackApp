@@ -42,6 +42,7 @@ dependencies {
 
     // picasso : for loading images into the imageView(s)
     implementation 'com.squareup.picasso:picasso:2.71828'
+
     //coruoselview library
     implementation 'com.synnapps:carouselview:0.1.5'
     //

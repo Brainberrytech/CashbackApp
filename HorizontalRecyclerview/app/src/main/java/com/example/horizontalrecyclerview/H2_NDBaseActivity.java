@@ -19,10 +19,12 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 
 
 public class H2_NDBaseActivity extends AppCompatActivity {
     ImageView ProfileImage;
+//    ImageView money,house,stores,menu,like,share;
     LayoutInflater layoutInflater;
     ActionMenuView actionMenuView;
     String ProfileName;
@@ -88,7 +90,21 @@ public class H2_NDBaseActivity extends AppCompatActivity {
         txt.setText(ProfileName);
 
         ProfileImage = (ImageView) drawerLayout.findViewById(R.id.profile_image);
-        ProfileImage.setImageResource(R.drawable.loginn);
+        Picasso.get().load("https://i.imgur.com/mvljBct.png").into(ProfileImage);
+
+//        money=drawerLayout.findViewById(R.id.money);
+//        Picasso.get().load("https://i.imgur.com/aDb1gBf.png").into(money);
+//
+//        house=drawerLayout.findViewById(R.id.house);
+//        Picasso.get().load("https://imgur.com/wH44tLV.png").into(house);
+//        stores=drawerLayout.findViewById(R.id.stores);
+//        Picasso.get().load("https://i.imgur.com/hSsvCKg.png").into(stores);
+//        menu=drawerLayout.findViewById(R.id.menu);
+//        Picasso.get().load("https://i.imgur.com/oK7FBgI.png").into(menu);
+//        like=drawerLayout.findViewById(R.id.like);
+//        Picasso.get().load("https://i.imgur.com/SvTWR59.png").into(like);
+//        //share=drawerLayout.findViewById(R.id.share);
+//        //Picasso.get().load("https://imgur.com/hZbbxjs.png").into(share);
 
         ActionBarDrawerToggle mDrawerToggle;
 

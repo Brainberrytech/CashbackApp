@@ -5,16 +5,22 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Refer_and_earn extends AppCompatActivity {
+import com.squareup.picasso.Picasso;
 
+public class Refer_and_earn extends AppCompatActivity {
+    ImageView refer;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_refer_and_earn);
+
+        refer=findViewById(R.id.imageView);
+        Picasso.get().load("https://i.imgur.com/FQdtgRo.png").into(refer);
 
     }
 

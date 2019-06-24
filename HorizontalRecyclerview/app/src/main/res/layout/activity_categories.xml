@@ -51,10 +51,11 @@
                 >
                 <!--it is used for user to checkout clothing section-->
                 <ImageView
+                    android:id="@+id/clothing"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/clothing" />
+                     />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -92,10 +93,11 @@
                 >
                 <!--it is used for user to checkout beauty section-->
                 <ImageView
+                    android:id="@+id/beauty"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/beauty" />
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -133,10 +135,11 @@
                 >
                 <!--it is used for user to checkout footwear section-->
                 <ImageView
+                    android:id="@+id/footwear"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/footwear" />
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -174,10 +177,11 @@
                 >
                 <!--it is used for user to checkout electronics section-->
                 <ImageView
+                    android:id="@+id/electronics"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/electronics" />
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -215,10 +219,11 @@
                 >
                 <!--it is used for user to checkout books section-->
                 <ImageView
+                    android:id="@+id/books"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/books" />
+                     />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -256,10 +261,11 @@
                 >
                 <!--it is used for user to checkout food section-->
                 <ImageView
+                    android:id="@+id/food"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/foods" />
+                     />
 
                 <TextView
                     android:layout_width="wrap_content"
