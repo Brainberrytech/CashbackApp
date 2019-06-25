@@ -20,7 +20,7 @@ public class MainActivity extends H2_NDBaseActivity{
     private static final String TAG = "MainActivity";
     CarouselView carouselView;
 
-    String[] sampleImages = {"https://imgur.com/UCO49aJ","https://imgur.com/vuGc4Hn","https://imgur.com/PnmAIJk","https://imgur.com/kWviREv","https://imgur.com/Hp3WgXI"};
+    String[] sampleImages = {"https://imgur.com/UCO49aJ.png","https://imgur.com/vuGc4Hn.png","https://imgur.com/PnmAIJk.png","https://imgur.com/kWviREv.png","https://imgur.com/Hp3WgXI.png"};
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
     private ArrayList<String> mImageUrls = new ArrayList<>();
