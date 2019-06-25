@@ -20,7 +20,7 @@ public class MainActivity extends H2_NDBaseActivity{
     private static final String TAG = "MainActivity";
     CarouselView carouselView;
 
-    int[] sampleImages = {R.drawable.swiggy, R.drawable.zomato, R.drawable.swiggysale, R.drawable.ajio, R.drawable.paytm};
+    String[] sampleImages = {"https://imgur.com/UCO49aJ","https://imgur.com/vuGc4Hn","https://imgur.com/PnmAIJk","https://imgur.com/kWviREv","https://imgur.com/Hp3WgXI"};
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
     private ArrayList<String> mImageUrls = new ArrayList<>();
@@ -54,7 +54,8 @@ public class MainActivity extends H2_NDBaseActivity{
     ImageListener imageListener = new ImageListener() {
         @Override
         public void setImageForPosition(int position, ImageView imageView) {
-            imageView.setImageResource(sampleImages[position]);
+            Picasso.get().load(sampleImages[position]).into(imageView);
+            //imageView.setImageResource(sampleImages[position]);
         }
     };
 
